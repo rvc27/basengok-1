@@ -1,7 +1,7 @@
   <nav class="navbar navbar-expand-lg bg-white shadow-sm" aria-label="Navigation Bar">
     <div class="container">
 
-      <a class="navbar-brand justify-center items-center" style=" float: none;" href="/basengok/">
+      <a class="navbar-brand justify-center items-center" style=" float: none;" href="<?php echo base_url() ?>">
         <img src="<?= base_url('assets/img/logo.png') ?>" alt="" width="32px">
       </a>
 
@@ -14,10 +14,10 @@
           <li class="nav-item" style="padding-left: 30px; padding-right: 30px;">
             <a class="nav-link  
             <?php
-            if ($_SERVER['REQUEST_URI'] === '/') {
+            if ($_SERVER['REQUEST_URI'] === base_url()) {
               echo $active;
             }
-            ?>" href="dtw">Daya Tarik Wisata</a>
+            ?>" href="<?php echo base_url() ?>">Daya Tarik Wisata</a>
           </li>
           <li class="nav-item" style="padding-left: 30px; padding-right: 30px;">
             <a class="nav-link  
@@ -25,7 +25,7 @@
             if ($_SERVER['REQUEST_URI'] === '/amenitas') {
               echo $active;
             }
-            ?>" href="/amenitas">Amenitas</a>
+            ?>" href="<?php echo base_url('/amenitas') ?>">Amenitas</a>
           </li>
           <li class="nav-item" style="padding-left: 30px; padding-right: 30px;">
             <a class="nav-link  
@@ -33,7 +33,7 @@
             if ($_SERVER['REQUEST_URI'] === '/pendukung') {
               echo $active;
             }
-            ?>" href="/pendukung">Data Pendukung</a>
+            ?>" href="<?php echo base_url('/pendukung') ?>">Data Pendukung</a>
           </li>
 
         </ul>
