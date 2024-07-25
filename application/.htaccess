@@ -1,0 +1,3 @@
+RewriteEngine on RewriteCond $1 !^(admin\.php|resources|robots\.txt) RewriteCond
+%{REQUEST_FILENAME} !-f RewriteCond %{REQUEST_FILENAME} !-d RewriteRule ^(.*)$
+admin.php/$1 [L,QSA]

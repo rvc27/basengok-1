@@ -111,7 +111,7 @@ $system_path = 'system';
  *
  * NO TRAILING SLASH!
  */
-$application_folder = 'front';
+$application_folder = 'application';
 
 /*
  *---------------------------------------------------------------
