@@ -6,7 +6,7 @@ class role extends AUTH_Controller
   public function __construct()
   {
     Parent::__construct();
-    $this->load->model('role_model', 'role');
+    $this->load->model('admin/role_model', 'role');
 
     if (($this->userdata->id_role != 1) && ($this->userdata->id_role != 2)) { // check for admin session and methos is login
       echo "<script>alert('Anda bukan Admin! Anda tidak berhak mengakses halaman ini!');

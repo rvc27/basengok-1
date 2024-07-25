@@ -9,7 +9,7 @@ class Amenitas extends AUTH_Controller
   public function __construct()
   {
     Parent::__construct();
-    $this->load->model('amenitas_model', 'amenitas');
+    $this->load->model('admin/Amenitas_model', 'amenitas');
 
 
     // if (($this->userdata->id_role != 1) && ($this->userdata->id_role != 2)) { // check for admin session and methos is login

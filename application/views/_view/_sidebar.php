@@ -13,11 +13,11 @@
 
         <!-- Sidebar Menu for ADMIN -->
         <li class="nav-item">
-          <a href="<?= base_url(); ?>adminHome" <?php if ($this->uri->segment(1) == "adminHome") {
-                                                  echo 'class="nav-link active"';
-                                                } else {
-                                                  echo 'class="nav-link"';
-                                                } ?>>
+          <a href="<?= base_url(); ?>admin" <?php if ($this->uri->segment(1) == "admin") {
+                                              echo 'class="nav-link active"';
+                                            } else {
+                                              echo 'class="nav-link"';
+                                            } ?>>
             <i class="nav-icon fas fa-home"></i>
             <p>
               Dashboard

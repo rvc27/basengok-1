@@ -5,7 +5,7 @@ class adminHome extends AUTH_Controller
 {
     public function index()
     {
-        $this->load->model("adminHome_model");
+        $this->load->model('admin/adminHome_model', 'adminHome_model');
 
         $pagedata['page']           = "home";
         $pagedata['judul']          = "Beranda";

@@ -6,7 +6,7 @@ class user extends AUTH_Controller
   public function __construct()
   {
     Parent::__construct();
-    $this->load->model('user_model', 'user');
+    $this->load->model('admin/user_model', 'user');
 
     if (($this->userdata->id_role != 1) && ($this->userdata->id_role != 2)) { // check for admin session and methos is login
       echo "<script>alert('Anda bukan Admin! Anda tidak berhak mengakses halaman ini!');

@@ -6,7 +6,7 @@ class Dtw extends AUTH_Controller
   public function __construct()
   {
     Parent::__construct();
-    $this->load->model('Dtw_model', 'dtw');
+    $this->load->model('admin/Dtw_model', 'dtw');
 
     // if (($this->userdata->id_role != 1) && ($this->userdata->id_role != 2)) { // check for admin session and methos is login
     //   echo "<script>alert('Anda bukan Admin! Anda tidak berhak mengakses halaman ini!');
