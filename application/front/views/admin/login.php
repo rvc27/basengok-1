@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>AdminLTE 3 | Log in</title>
+  <link href='<?= base_url("assets/uploads/images/icon.png"); ?>' rel='shortcut icon' type='image/x-icon' />
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="<?= base_url('assets'); ?>/vendor/plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- icheck bootstrap -->
+  <link rel="stylesheet" href="<?= base_url('assets'); ?>/vendor/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="<?= base_url('assets'); ?>/vendor/dist/css/adminlte.min.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+</head>
+
+<body class="hold-transition login-page">
+  <div class="login-box">
+    <div class="card card-outline card-primary">
+      <div class="card-header text-center">
+        <a target='_blank' href="http://umpr.ac.id" class="h1"><b>BACK</b>END</a>
+      </div>
+      <div class="card-body">
+        <!--<p class="login-box-msg">Sign in to start your session</p>-->
+        <!-- Form -->
+        <form action="<?php echo base_url('Login/login'); ?>" method="post">
+          <div class="input-group mb-3">
+            <input type="text" name="username" class="form-control" placeholder="Username" required>
+            <div class="input-group-append">
+              <div class="input-group-text">
+                <span class="fas fa-user"></span>
+              </div>
+            </div>
+          </div>
+          <div class="input-group mb-3">
+            <input type="password" name="password" class="form-control" placeholder="Password" required>
+            <div class="input-group-append">
+              <div class="input-group-text">
+                <span class="fas fa-lock"></span>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <button type="submit" class="btn btn-primary btn-block">Login</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="card-footer">
+      </div>
+      <!-- /.login-card-body -->
+    </div>
+    <!-- /.login-box -->
+    <?php
+    echo show_err_msg($this->session->flashdata('error_msg'));
+    ?>
+  </div>
+
+</body>
+
+<!-- jQuery -->
+<script src="<?= base_url('assets'); ?>/vendor/plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="<?= base_url('assets'); ?>/vendor/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="<?= base_url('assets'); ?>/vendor/dist/js/adminlte.min.js"></script>
+
+</html>
