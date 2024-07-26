@@ -24,7 +24,7 @@ class user extends AUTH_Controller
 
     $pagedata['role'] = $this->user->add_record();
 
-    $this->admintemplate->views('user/home', $pagedata);
+    $this->admintemplate->views('admin/user/home', $pagedata);
   }
 
   public function ajax_list()

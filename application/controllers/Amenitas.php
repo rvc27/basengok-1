@@ -26,7 +26,7 @@ class Amenitas extends AUTH_Controller
     $pagedata['deskripsi']        = "Manage Data Amenitas";
     $pagedata['title']            = "amenitas";
 
-    $this->admintemplate->views('amenitas/home', $pagedata);
+    $this->admintemplate->views('admin/amenitas/home', $pagedata);
   }
 
   public function ajax_list()

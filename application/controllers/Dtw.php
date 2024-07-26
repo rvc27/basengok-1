@@ -22,7 +22,7 @@ class Dtw extends AUTH_Controller
     $pagedata['deskripsi']        = "Manage Data DTW";
     $pagedata['title']            = "DTW";
 
-    $this->admintemplate->views('dtw/home', $pagedata);
+    $this->admintemplate->views('admin/dtw/home', $pagedata);
   }
 
   public function ajax_list()

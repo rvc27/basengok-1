@@ -4,7 +4,7 @@
   <div class="sidebar">
     <!-- Sidebar user panel (optional) -->
     <div class="text-center mt-2">
-      <!-- <img src="<?= base_url('assets'); ?>/uploads/images/logo.png" alt="" class="img-fluid" alt="Responsive image" style="width:80%"> -->
+      <img src="<?= base_url('assets'); ?>/uploads/images/logo.png" alt="" class="img-fluid" alt="Responsive image" style="width:80%">
     </div>
 
     <nav class="mt-2">
@@ -26,37 +26,37 @@
         </li>
         <li class="nav-item">
 
-          <a href="<?= base_url(); ?>dtw" <?php if ($this->uri->segment(1) == "dtw") {
-                                            echo 'class="nav-link active"';
-                                          } else {
-                                            echo 'class="nav-link"';
-                                          } ?>>
+          <a href="<?= base_url(); ?>admin/dtw" <?php if ($this->uri->segment(1) == "admin/dtw") {
+                                                  echo 'class="nav-link active"';
+                                                } else {
+                                                  echo 'class="nav-link"';
+                                                } ?>>
             <i class="fa fa-map nav-icon"></i>
             <p>Daya Tarik Wisata</p>
           </a>
         </li>
         <li class="nav-item">
-          <a href="<?= base_url(); ?>amenitas" <?php if ($this->uri->segment(1) == "amenitas") {
-                                                  echo 'class="nav-link active"';
-                                                } else {
-                                                  echo 'class="nav-link"';
-                                                } ?>>
+          <a href="<?= base_url(); ?>admin/amenitas" <?php if ($this->uri->segment(1) == "admin/amenitas") {
+                                                        echo 'class="nav-link active"';
+                                                      } else {
+                                                        echo 'class="nav-link"';
+                                                      } ?>>
             <i class="fa fa-book nav-icon"></i>
             <p>Amenitas</p>
           </a>
         </li>
         <li class="nav-item">
-          <a href="<?= base_url(); ?>kategori" <?php if ($this->uri->segment(1) == "kategori") {
-                                                  echo 'class="nav-link active"';
-                                                } else {
-                                                  echo 'class="nav-link"';
-                                                } ?>>
+          <a href="<?= base_url(); ?>admin/kategori" <?php if ($this->uri->segment(1) == "admin/kategori") {
+                                                        echo 'class="nav-link active"';
+                                                      } else {
+                                                        echo 'class="nav-link"';
+                                                      } ?>>
             <i class="fa fa-user-alt nav-icon"></i>
             <p>Kategori</p>
           </a>
         </li>
         <!-- <li class="nav-item">
-          <a href="<?= base_url(); ?>pendukung" <?php if ($this->uri->segment(1) == "pendukung") {
+          <a href="<?= base_url(); ?>pendukung" <?php if ($this->uri->segment(1) == "admin/pendukung") {
                                                   echo 'class="nav-link active"';
                                                 } else {
                                                   echo 'class="nav-link"';

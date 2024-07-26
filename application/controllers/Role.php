@@ -22,7 +22,7 @@ class role extends AUTH_Controller
     $pagedata['deskripsi']        = "Manage Data role";
     $pagedata['title']            = "role";
 
-    $this->admintemplate->views('role/home', $pagedata);
+    $this->admintemplate->views('admin/role/home', $pagedata);
   }
 
   public function ajax_list()

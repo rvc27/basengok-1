@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class kategori extends AUTH_Controller
+class Kategori extends AUTH_Controller
 {
   public function __construct()
   {
@@ -22,7 +22,7 @@ class kategori extends AUTH_Controller
     $pagedata['deskripsi']        = "Manage Data kategori";
     $pagedata['title']            = "kategori";
 
-    $this->admintemplate->views('kategori/home', $pagedata);
+    $this->admintemplate->views('admin/kategori/home', $pagedata);
   }
 
   public function ajax_list()

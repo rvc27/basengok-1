@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class adminHome extends AUTH_Controller
+class Admin extends AUTH_Controller
 {
     public function index()
     {
@@ -18,6 +18,6 @@ class adminHome extends AUTH_Controller
         $pagedata['jumlah_amenitas'] = $this->adminHome_model->jumlah_amenitas();
         $pagedata['jumlah_dtw'] = $this->adminHome_model->jumlah_dtw();
 
-        $this->admintemplate->views('adminhome', $pagedata);
+        $this->admintemplate->views('admin/adminhome', $pagedata);
     }
 }

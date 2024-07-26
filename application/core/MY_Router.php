@@ -1,6 +1,6 @@
 <?php
 
-class ADMIN_Router extends CI_Router
+class MY_Router extends CI_Router
 {
   protected function _set_default_controller()
   {

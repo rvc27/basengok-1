@@ -14,9 +14,9 @@ class Login extends CI_Controller
     $session = $this->session->userdata('status');
 
     if ($session == '') {
-      $this->load->view('login');
+      $this->load->view('admin/login');
     } else {
-      redirect('adminHome');
+      redirect('admin');
     }
   }
 
@@ -41,7 +41,7 @@ class Login extends CI_Controller
           'status' => "Logged in"
         ];
         $this->session->set_userdata($session);
-        redirect('adminHome');
+        redirect('admin');
       }
     } else {
       $this->session->set_flashdata('error_msg', validation_errors());
